@@ -3,5 +3,5 @@ from .models import Employee
 
 
 class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
-    model = EmployeeSerializer
-    fields = all
+    model = Employee
+    fields = ('url', 'first_name', 'last_name', 'phone_number', 'national_id', 'email', 'date_of_birth', 'status', 'postion')
